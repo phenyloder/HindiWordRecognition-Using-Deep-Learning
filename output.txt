@@ -1,0 +1,53 @@
+Epoch 1/15
+2300/2300 [==============================] - 105s 45ms/step - loss: 0.6574 - accuracy: 0.8139 - val_loss: 0.1997 - val_accuracy: 0.9397 - lr: 0.0010
+Epoch 2/15
+2300/2300 [==============================] - 100s 43ms/step - loss: 0.1611 - accuracy: 0.9511 - val_loss: 0.1641 - val_accuracy: 0.9510 - lr: 0.0010
+Epoch 3/15
+2300/2300 [==============================] - 99s 43ms/step - loss: 0.1239 - accuracy: 0.9632 - val_loss: 0.1532 - val_accuracy: 0.9568 - lr: 0.0010
+Epoch 4/15
+2300/2300 [==============================] - 100s 43ms/step - loss: 0.1075 - accuracy: 0.9686 - val_loss: 0.1552 - val_accuracy: 0.9584 - lr: 0.0010
+Epoch 5/15
+2300/2300 [==============================] - 99s 43ms/step - loss: 0.0269 - accuracy: 0.9916 - val_loss: 0.0635 - val_accuracy: 0.9826 - lr: 2.0000e-04
+Epoch 6/15
+2300/2300 [==============================] - 99s 43ms/step - loss: 0.0120 - accuracy: 0.9964 - val_loss: 0.0728 - val_accuracy: 0.9831 - lr: 2.0000e-04
+Epoch 7/15
+2300/2300 [==============================] - 100s 44ms/step - loss: 0.0042 - accuracy: 0.9989 - val_loss: 0.0681 - val_accuracy: 0.9849 - lr: 1.0000e-04
+Model: "sequential_18"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d_48 (Conv2D)          (None, 30, 30, 32)        320       
+                                                                 
+ max_pooling2d_43 (MaxPoolin  (None, 15, 15, 32)       0         
+ g2D)                                                            
+                                                                 
+ conv2d_49 (Conv2D)          (None, 15, 15, 64)        18496     
+                                                                 
+ max_pooling2d_44 (MaxPoolin  (None, 14, 14, 64)       0         
+ g2D)                                                            
+                                                                 
+ conv2d_50 (Conv2D)          (None, 14, 14, 128)       73856     
+                                                                 
+ max_pooling2d_45 (MaxPoolin  (None, 7, 7, 128)        0         
+ g2D)                                                            
+                                                                 
+ conv2d_51 (Conv2D)          (None, 5, 5, 256)         295168    
+                                                                 
+ max_pooling2d_46 (MaxPoolin  (None, 2, 2, 256)        0         
+ g2D)                                                            
+                                                                 
+ flatten_3 (Flatten)         (None, 1024)              0         
+                                                                 
+ dense_10 (Dense)            (None, 64)                65600     
+                                                                 
+ dense_11 (Dense)            (None, 128)               8320      
+                                                                 
+ dense_12 (Dense)            (None, 256)               33024     
+                                                                 
+ dense_13 (Dense)            (None, 46)                11822     
+                                                                 
+=================================================================
+Total params: 506,606
+Trainable params: 506,606
+Non-trainable params: 0
+_________________________________________________________________
